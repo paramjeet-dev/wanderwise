@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom'
 import Home from './components/Home'
 import Login from './components/Login'
 import Signup from './components/Signup'
+import Dashboard from './components/Dashboard'
+import Budget from './components/Budget'
 
 function App() {
   const router = createBrowserRouter([{
@@ -19,6 +19,14 @@ function App() {
   {
     path:"/signup",
     element:<Signup/>
+  },
+  {
+    path:"/dashboard",
+    element:<Dashboard/>
+  },
+  {
+    path:"/budget_tracker",
+    element:<Budget/>
   }
 ])
   return (

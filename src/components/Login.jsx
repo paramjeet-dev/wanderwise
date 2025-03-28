@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import { useForm } from 'react-hook-form'
 import { AiOutlineEyeInvisible, AiOutlineEye } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 
 const Login = () => {
 
@@ -61,7 +62,7 @@ const Login = () => {
           </button>
 
           <span className='text-center text-sm text-gray-700 mt-2'>
-            <a href="#" className='text-blue-600 hover:underline'>Forgot Password?</a> | <a href="#" className='text-blue-600 hover:underline'>Create an account</a>
+            <a href="#" className='text-blue-600 hover:underline'>Forgot Password?</a> | <Link to="/signup" className='text-blue-600 hover:underline'>Create an account</Link>
           </span>
 
         </form>

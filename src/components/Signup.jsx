@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { AiOutlineEyeInvisible, AiOutlineEye } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 
 const Signup = () => {
   const {
@@ -92,6 +93,9 @@ const Signup = () => {
             Sign Up
           </button>
 
+          <span className='text-center text-sm text-gray-700 mt-2'>
+            <Link to="/login" className='text-blue-600 hover:underline'>Already have an account?</Link>
+          </span>
         </form>
       </div>
     </>
